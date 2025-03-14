@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../app/styles/jobCard.module.css'
+import styles from '../styles/jobCard.module.css'
 const JobCard = ({props}) => {
   return (
     <div className={styles.card}>

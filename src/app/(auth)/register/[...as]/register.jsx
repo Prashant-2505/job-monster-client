@@ -1,15 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import styles from "../../../styles/register.module.css";
+import styles from "../../../../styles/register.module.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useDispatch } from "react-redux";
 import { login } from "../../../../lib/store/features/auth/authSlice";
 
-const Register = ({as}) => {
+const Register = ({ as }) => {
+  console.log(as)
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const role = as;
   const [loading, setLoading] = useState(false);
 
   const router = useRouter();
@@ -26,7 +28,7 @@ const Register = ({as}) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email, password,role:{as}}),
+      body: JSON.stringify({ name, email, password, role}),
     };
 
     setLoading(true);

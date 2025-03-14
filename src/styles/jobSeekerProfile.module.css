@@ -1,8 +1,22 @@
+.container {
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
 .header {
     background-color: var(--secondary-color);
     width: 100%;
     height: 7rem;
     position: relative;
+}
+
+.body {
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+.tab {
+    height: 100%;
 }
 
 .profile {
@@ -41,6 +55,10 @@
     box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+.data_input {
+    padding: 1rem 2rem;
+}
+
 .social {
     padding: 1rem 2rem;
 
@@ -57,6 +75,8 @@
 
         .social_links {
             display: flex;
+            justify-content: center;
+            align-items: center;
             list-style: none;
             gap: 1rem;
 
@@ -85,93 +105,19 @@
 
 .profile_img {
     height: 7rem;
-    /* Full height of the header */
     width: 7rem;
-    /* Adjust size based on your needs */
     background-color: black;
     border-radius: 50%;
-    /* Makes it circular */
     position: absolute;
     top: 30%;
-    /* Move the image vertically to center */
     left: 5%;
-    /* Align to the left */
     transform: translateY(-50%);
-    /* Center vertically */
     z-index: 1;
-    /* Make sure it's on top of the header */
 }
 
 
 
 /* tab */
-.skill_section {
-    background-color: blue;
-    width: 100%;
-    display: none;
-}
-
-.tab_skill_item {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
-
-    >li {
-        background-color: var(--secondary-background-color);
-        padding: 0.3rem 0.6rem;
-        border-radius: 10px;
-    }
-}
-
-.tab_education_item {
-    list-style: none;
-
-    li {
-        background-color: var(--secondary-background-color);
-        padding: 0.3rem 0.6rem;
-        border-radius: 10px;
-        margin-bottom: 1rem;
-    }
-}
-
-.tab_project_item {
-    list-style: none;
-
-    ul {
-        list-style: none;
-    }
-
-    li {
-        background-color: var(--secondary-background-color);
-        padding: 0.3rem 0.6rem;
-        border-radius: 10px;
-        margin-bottom: 1rem;
-    }
-
-    .tech {
-        display: flex;
-        margin-top: 0.5rem;
-        gap: 2rem;
-
-        ul {
-            display: flex;
-
-
-            li {
-                background-color: var(--primary-background-color);
-                padding: 0.3rem 0.6rem;
-                border-radius: 10px;
-                margin-right: 1rem;
-            }
-        }
-
-
-    }
-
-    .link {
-        span {
-            margin-right: 2rem;
-        }
-    }
+.edit_btns {
+    text-align: center;
 }

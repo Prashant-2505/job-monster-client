@@ -1,0 +1,34 @@
+.skill_container
+{
+    height: 100%;
+    width: 100%;
+
+}
+.input_section {
+    display: flex;
+    align-items: center;
+}
+
+.skills_list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill_item {
+    display: flex;
+    gap: 10px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #F3F4F6;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
