@@ -1,17 +1,22 @@
 "use client";
 import React, { useState } from "react";
-import styles from "../../../styles/login.module.css";
+import styles from "../../../../styles/login.module.css";
 import Link from "next/link";
 import { Eye } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useDispatch } from "react-redux";
+import { login } from "../../../../lib/store/features/auth/authSlice";
 
-const Login = ({as}) => {
+
+const Login = ({ as }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const router = useRouter();
+
+  const dispatch = useDispatch();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -40,7 +45,8 @@ const Login = ({as}) => {
         throw new Error(result.message || "Login failed");
       }
 
-      localStorage.setItem("token", result);
+      const { user, token } = result;
+      dispatch(login({ user, token }));
       router.push("/");
     } catch (error) {
       alert(error.message);

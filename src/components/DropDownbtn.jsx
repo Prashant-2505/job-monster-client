@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState } from "react";
-import styles from "../app/styles/dropdownBtn.module.css";
+import styles from "../styles/dropdownBtn.module.css";
 import Link from "next/link";
 
 // Create a context for managing dropdown state

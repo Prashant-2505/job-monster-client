@@ -8,9 +8,7 @@
   --secondary-background-color:  #F3F4F6;
   --primary-text: black;
   --secondary-text: #6D7482; /* Dark Gray */
-  --accent-color: #ffc107; /* Golden Yellow */
-  --btn-primary: #007bff;
-  --btn-secondary: #0056b3;
+  --accent-color: #ffc107; /* Golden Yellow */;
   --btn-extra:black
 }
 
@@ -49,3 +47,28 @@ a {
 }
 
 /* Add more styles as needed */
+
+
+.data_input
+{
+    padding: 1rem 2rem;
+}
+.add_btn
+{
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: var( --secondary-text);
+    color: var(--primary-color);
+}
+.add_btn:hover
+{
+  
+    background-color:var(--primary-color);
+    color:  var( --secondary-text);
+    border: 1px solid var(--secondary-text);
+}

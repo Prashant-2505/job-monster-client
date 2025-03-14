@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext } from "react";
-import styles from "../app/styles/tab.module.css";
+import styles from "../styles/tab.module.css";
 import { motion } from "framer-motion";
 
 // Create the context
@@ -32,7 +32,7 @@ Tab.headContainer = ({ children }) => {
 };
 
 // Subcomponent for individual tab items
-Tab.item = ({ label, index }) => {
+Tab.headerItem = ({ label, index }) => {
   const { currentTab, onchange } = useContext(TabContext);
 
   return (

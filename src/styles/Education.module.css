@@ -1,0 +1,83 @@
+
+.container
+{
+  width: 100%;
+}
+.education {
+    padding: 20px;
+    width: 70%;
+    border-radius: 8px;
+  }
+  
+  .education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .education_section {
+    margin-bottom: 20px;
+  
+    padding-bottom: 10px;
+  }
+  
+  .education_display {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 10px; /* Adds spacing between grid items */
+}
+
+  
+  .education_display p {
+    margin: 5px 0;
+  }
+  
+  .education_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .education_form input {
+    padding: 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .education_data {
+
+    background: #F3F4F6;
+    padding: 1rem;
+    border-radius: 10px;
+    p:nth-child(1) {
+      color: gray;
+      font-weight: 600;
+    }
+    
+    p:nth-child(2) {
+      color: black;
+    }
+  }
+  
+  
+  .education_button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .education_button:hover {
+    background: #0056b3;
+  }
+  
+  .save_button {
+    display: block;
+    margin: 10px auto;
+  }
+  
